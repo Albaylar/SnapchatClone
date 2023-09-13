@@ -192,7 +192,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="list.bullet" catalog="system" id="oWR-MJ-2eG"/>
                     <connections>
-                        <outlet property="tableView" destination="Ycg-pL-j60" id="M93-H3-ii1"/>
+                        <outlet property="tableView" destination="Ycg-pL-j60" id="O0C-MW-gaS"/>
                         <segue destination="m4a-BD-rfp" kind="show" identifier="toSnapVC" id="ohx-32-pxp"/>
                     </connections>
                 </viewController>
@@ -208,8 +208,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qk4-7Z-HwQ">
-                                <rect key="frame" x="134" y="81" width="131" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qk4-7Z-HwQ">
+                                <rect key="frame" x="113" y="65" width="167" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -217,18 +218,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FkF-he-bZ6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="qk4-7Z-HwQ" firstAttribute="leading" secondItem="FkF-he-bZ6" secondAttribute="leading" constant="134" id="Knv-rW-3GN"/>
-                            <constraint firstItem="FkF-he-bZ6" firstAttribute="trailing" secondItem="qk4-7Z-HwQ" secondAttribute="trailing" constant="128" id="ULM-8d-AAx"/>
-                            <constraint firstItem="FkF-he-bZ6" firstAttribute="bottom" secondItem="qk4-7Z-HwQ" secondAttribute="bottom" constant="708" id="aZ6-kU-7Rb"/>
-                            <constraint firstItem="qk4-7Z-HwQ" firstAttribute="top" secondItem="FkF-he-bZ6" secondAttribute="top" constant="81" id="nuP-NS-nlu"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EKS-jo-P00"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="qk4-7Z-HwQ" id="LoZ-ta-bfM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWe-KG-CxL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2427" y="-620"/>
+            <point key="canvasLocation" x="2426.7175572519081" y="-620.42253521126759"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eTi-PZ-6TZ">
