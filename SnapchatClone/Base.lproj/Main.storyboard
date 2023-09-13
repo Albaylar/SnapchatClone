@@ -106,10 +106,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SelectImage" translatesAutoresizingMaskIntoConstraints="NO" id="NbS-RX-s9l">
-                                <rect key="frame" x="41" y="89" width="322" height="254"/>
+                                <rect key="frame" x="10" y="100" width="373" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="Dkg-LP-7ly"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1y-bo-ehk">
-                                <rect key="frame" x="157" y="373" width="79" height="356"/>
+                                <rect key="frame" x="16" y="650" width="361" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Upload"/>
                                 <connections>
@@ -120,12 +123,12 @@
                         <viewLayoutGuide key="safeArea" id="utx-Tp-IW0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="utx-Tp-IW0" firstAttribute="bottom" secondItem="r1y-bo-ehk" secondAttribute="bottom" constant="74" id="JE9-Ri-E7Q"/>
-                            <constraint firstItem="NbS-RX-s9l" firstAttribute="top" secondItem="utx-Tp-IW0" secondAttribute="top" constant="89" id="JV2-02-hFB"/>
-                            <constraint firstItem="r1y-bo-ehk" firstAttribute="centerX" secondItem="1Vh-lS-jDL" secondAttribute="centerX" id="RMn-Nn-Fvy"/>
-                            <constraint firstItem="utx-Tp-IW0" firstAttribute="trailing" secondItem="NbS-RX-s9l" secondAttribute="trailing" constant="30" id="SHi-TF-G3f"/>
-                            <constraint firstItem="r1y-bo-ehk" firstAttribute="top" secondItem="NbS-RX-s9l" secondAttribute="bottom" constant="30" id="lPt-Yg-Tru"/>
-                            <constraint firstItem="NbS-RX-s9l" firstAttribute="leading" secondItem="utx-Tp-IW0" secondAttribute="leading" constant="41" id="vcx-mH-JVQ"/>
+                            <constraint firstItem="NbS-RX-s9l" firstAttribute="top" secondItem="utx-Tp-IW0" secondAttribute="top" constant="100" id="8Bh-Va-xJX"/>
+                            <constraint firstItem="r1y-bo-ehk" firstAttribute="leading" secondItem="1Vh-lS-jDL" secondAttribute="leadingMargin" id="YxH-lN-MxN"/>
+                            <constraint firstItem="r1y-bo-ehk" firstAttribute="top" secondItem="NbS-RX-s9l" secondAttribute="bottom" constant="50" id="bQK-Rd-QgE"/>
+                            <constraint firstItem="r1y-bo-ehk" firstAttribute="centerX" secondItem="NbS-RX-s9l" secondAttribute="centerX" id="f60-Zz-hlt"/>
+                            <constraint firstAttribute="trailing" secondItem="NbS-RX-s9l" secondAttribute="trailing" constant="10" id="paU-68-IQ9"/>
+                            <constraint firstItem="NbS-RX-s9l" firstAttribute="leading" secondItem="utx-Tp-IW0" secondAttribute="leading" constant="10" id="u0q-It-1To"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="square.and.arrow.up.on.square.fill" catalog="system" id="ycC-Cs-qH1"/>
@@ -189,6 +192,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="list.bullet" catalog="system" id="oWR-MJ-2eG"/>
                     <connections>
+                        <outlet property="tableView" destination="Ycg-pL-j60" id="M93-H3-ii1"/>
                         <segue destination="m4a-BD-rfp" kind="show" identifier="toSnapVC" id="ohx-32-pxp"/>
                     </connections>
                 </viewController>
